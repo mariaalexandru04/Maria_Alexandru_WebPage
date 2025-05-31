@@ -1,0 +1,120 @@
+/* === Base === */
+:root {
+  --blue: #C8CEEE;
+  --green: #CBD3AD;
+  --peach: #FFC697;
+  --yellow: #F7E5B7;
+  --pink: #F9C5C7;
+  --lilac: #DDC3E3;
+  --dark: #333;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--blue);
+  color: var(--dark);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* === Header & Navigation === */
+header {
+  background-color: var(--peach);
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin-bottom: 15px;
+  color: var(--dark);
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--dark);
+  background: var(--yellow);
+  padding: 10px 15px;
+  margin: 0 5px;
+  border-radius: 5px;
+  transition: all 0.2s ease-in-out;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background: var(--green);
+  color: var(--white);
+}
+
+/* === Sections === */
+section {
+  background-color: var(--white);
+  padding: 30px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: var(--green);
+}
+
+section ul {
+  list-style: none;
+}
+
+section ul li {
+  margin-bottom: 10px;
+}
+
+/* === Image List as Grid === */
+section ul li img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* For photo galleries - make it grid! */
+ul:has(li img) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding-left: 0;
+}
+
+/* === Video Styling === */
+.video-box {
+  margin: 30px 0;
+  text-align: center;
+}
+
+.video-box iframe {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* === Footer === */
+footer {
+  text-align: center;
+  background-color: var(--green);
+  padding: 20px;
+  border-radius: 8px;
+  color: var(--dark);
+  font-size: 0.9rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
